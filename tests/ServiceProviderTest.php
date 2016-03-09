@@ -9,29 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace DraperStudio\Friendable;
+namespace DraperStudio\Tests\Friendable;
+
+use GrahamCampbell\TestBenchCore\ServiceProviderTrait;
 
 /**
- * Class Status.
+ * This is the service provider test class.
  *
  * @author DraperStudio <hello@draperstudio.tech>
  */
-class Status
+class ServiceProviderTest extends AbstractTestCase
 {
-    /**
-     *
-     */
-    const PENDING = 0;
-    /**
-     *
-     */
-    const ACCEPTED = 1;
-    /**
-     *
-     */
-    const DENIED = 2;
-    /**
-     *
-     */
-    const BLOCKED = 3;
+    use ServiceProviderTrait;
 }

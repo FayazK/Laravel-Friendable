@@ -4,8 +4,16 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
+/**
+ * Class CreateFriendshipsTable.
+ *
+ * @author DraperStudio <hello@draperstudio.tech>
+ */
 class CreateFriendshipsTable extends Migration
 {
+    /**
+     *
+     */
     public function up()
     {
         Schema::create('friendships', function (Blueprint $table) {
@@ -17,6 +25,9 @@ class CreateFriendshipsTable extends Migration
         });
     }
 
+    /**
+     *
+     */
     public function down()
     {
         Schema::dropIfExists('friendships');
